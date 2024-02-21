@@ -4,11 +4,12 @@ import { Content } from '../helper-files/content-interface';
 import { ContentCardComponent } from '../content-card/content-card.component';
 import { TypedecisionPipe } from '../typedecision.pipe';
 import { FormsModule } from '@angular/forms';
+import { HoverAffectDirective } from '../hover-affect.directive';
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [CommonModule, ContentCardComponent, TypedecisionPipe, FormsModule],
+  imports: [CommonModule, ContentCardComponent, TypedecisionPipe, FormsModule, HoverAffectDirective],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'
 })
@@ -72,7 +73,7 @@ export class ContentListComponent implements OnInit {
         title: "Sweet Maria's coffee",
         description: "Sweet Maria's was founded by Thompson Owen in 1997 with Maria Troy, who he met in the Masters program at School of the Art Institute Chicago. Thompson (or Thom or Tom) is in charge of the green coffee side our company and does much of the writing and photography etc.",
         creator: "Thompson Owen",
-        imgURL: "https://pbs.twimg.com/profile_images/714600698743242752/cmK1odH9_400x400.jpg",
+        imgURL: "",
         type: "Local",
         tags: ["Sweet", "Underrated"]
       },
