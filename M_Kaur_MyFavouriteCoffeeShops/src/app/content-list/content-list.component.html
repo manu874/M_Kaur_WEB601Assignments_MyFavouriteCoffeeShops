@@ -1,6 +1,10 @@
 <input type="text" [(ngModel)]="searchTitle" placeholder="Enter title">
 <button (click)="checkContentExists()">Search coffee shops</button>
 
+<h1>the item display from single id</h1>
+<app-content-card [contentItem]="items"></app-content-card>
+
+
 <p [ngStyle]="{'color': contentExists ? 'green' : 'red'}">{{ message }}</p>
 
 <div>
